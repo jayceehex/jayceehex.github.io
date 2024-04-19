@@ -21,15 +21,6 @@ const AboutSitePage = ({ location }) => (
         >
           Gatsby
         </a>
-        . Global state is handled using{" "}
-        <a
-          href="https://react-redux.js.org/"
-          title="Redux"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Redux
-        </a>
         . The icons are served by{" "}
         <a
           href="https://github.com/react-icons/react-icons"
