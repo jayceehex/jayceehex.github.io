@@ -1,6 +1,5 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import "../styles/styles.css"
 import FrontPageLayout from "../components/front-page-layout"
 
 const IndexPage = () => (

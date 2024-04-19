@@ -1,6 +1,5 @@
 import PropTypes from "prop-types"
 import React from "react"
-import "./header.scss"
 
 const Header = ({ siteTitle }) => (
   <div className="content-box">
