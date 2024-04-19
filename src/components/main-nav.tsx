@@ -1,5 +1,4 @@
 import React from "react"
-import "./main-nav.scss"
 import { Link } from "gatsby"
 
 const MainNav = ({ navLinks }) => {

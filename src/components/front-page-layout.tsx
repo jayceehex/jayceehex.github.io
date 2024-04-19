@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import "./layout.scss"
 import Footer from "./footer"
 import MainNav from "./main-nav"
 import FrontPageHeader from './front-page-header'

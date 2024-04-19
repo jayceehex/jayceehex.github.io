@@ -1,6 +1,5 @@
 import React from "react"
 import { FaTwitter, FaGithub, FaItchIo } from "react-icons/fa"
-import "./footer.css"
 import FooterLink from "./footer-link"
 
 const footerLinks = [
