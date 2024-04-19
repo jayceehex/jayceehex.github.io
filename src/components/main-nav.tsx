@@ -1,7 +1,6 @@
 import React from "react"
 import "./main-nav.scss"
-import { FaLightbulb, FaRegLightbulb } from "react-icons/fa"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 
 const MainNav = ({ navLinks }) => {
   return (

@@ -2,9 +2,8 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import "../styles/styles.css"
 import FrontPageLayout from "../components/front-page-layout"
-import { connect } from "react-redux"
 
-const IndexPage = ({ dispatch }) => (
+const IndexPage = () => (
   <>
     <Helmet>
       <title>jayceehex.github.io</title>
@@ -22,7 +21,4 @@ const IndexPage = ({ dispatch }) => (
   </>
 )
 
-export default connect(
-  state => ({}),
-  null
-)(IndexPage)
+export default IndexPage

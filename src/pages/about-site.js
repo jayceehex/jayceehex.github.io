@@ -2,9 +2,8 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import "../styles/styles.css"
 import Layout from "../components/layout"
-import { connect } from "react-redux"
 
-const AboutSitePage = ({ location, dispatch }) => (
+const AboutSitePage = ({ location }) => (
   <>
     <Helmet>
       <title>About this site | jayceehex.github.io</title>
@@ -55,7 +54,4 @@ const AboutSitePage = ({ location, dispatch }) => (
   </>
 )
 
-export default connect(
-  state => ({}),
-  null
-)(AboutSitePage)
+export default AboutSitePage
