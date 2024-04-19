@@ -2,14 +2,11 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { toggleLightMode } from "../state/app"
 import { connect } from "react-redux"
 
-const NotFoundPage = ({ location, dispatch, isLightMode }) => (
+const NotFoundPage = ({ location, dispatch }) => (
   <Layout
     location={location}
-    toggleLightMode={() => dispatch(toggleLightMode(!isLightMode))}
-    lightMode={isLightMode}
   >
     <SEO title="404: Not found" />
     <h1>404: Not Found</h1>
@@ -18,8 +15,6 @@ const NotFoundPage = ({ location, dispatch, isLightMode }) => (
 )
 
 export default connect(
-  state => ({
-    isLightMode: state.app.isLightMode,
-  }),
+  state => ({}),
   null
 )(NotFoundPage)

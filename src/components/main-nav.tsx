@@ -3,10 +3,7 @@ import "./main-nav.scss"
 import { FaLightbulb, FaRegLightbulb } from "react-icons/fa"
 import { graphql, Link, useStaticQuery } from "gatsby"
 
-const MainNav = ({ lightMode, toggleLightMode, navLinks }) => {
-  const lightModeToggleIcon = () =>
-    lightMode ? <FaRegLightbulb /> : <FaLightbulb />
-
+const MainNav = ({ navLinks }) => {
   return (
     <nav className="main-nav">
       <div className="content-box">
@@ -23,15 +20,6 @@ const MainNav = ({ lightMode, toggleLightMode, navLinks }) => {
               </Link>
             </li>
           ))}
-          <li>
-            <button
-              className="main-nav--item icon-button"
-              onClick={toggleLightMode}
-              aria-label="Toggle light mode"
-            >
-              {lightModeToggleIcon()}
-            </button>
-          </li>
         </ul>
       </div>
     </nav>

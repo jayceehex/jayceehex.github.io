@@ -13,7 +13,7 @@ import Header from "./header"
 import Footer from "./footer"
 import MainNav from "./main-nav"
 
-const Layout = ({ location, lightMode, toggleLightMode, children }) => {
+const Layout = ({ location, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -39,11 +39,9 @@ const Layout = ({ location, lightMode, toggleLightMode, children }) => {
       : navLinks.find(navLink => navLink.link == path)?.name || ``
 
   return (
-    <div className={`container${lightMode ? " light-theme" : ""}`}>
+    <div className={'container'}>
       <MainNav
         navLinks={data.site.siteMetadata?.navLinks || []}
-        toggleLightMode={toggleLightMode}
-        lightMode={lightMode}
       />
       <Header
         siteTitle={siteTitle(

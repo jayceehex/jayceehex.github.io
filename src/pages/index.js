@@ -2,18 +2,14 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import "../styles/styles.css"
 import FrontPageLayout from "../components/front-page-layout"
-import { toggleLightMode } from "../state/app"
 import { connect } from "react-redux"
 
-const IndexPage = ({ isLightMode, dispatch }) => (
+const IndexPage = ({ dispatch }) => (
   <>
     <Helmet>
       <title>jayceehex.github.io</title>
     </Helmet>
-    <FrontPageLayout
-      lightMode={isLightMode}
-      toggleLightMode={() => dispatch(toggleLightMode(!isLightMode))}
-    >
+    <FrontPageLayout>
       <p>
         <span className="highlight">Hello there!</span> I'm a JavaScript developer
         from the West Country. I've got experience in React and Angular
@@ -27,8 +23,6 @@ const IndexPage = ({ isLightMode, dispatch }) => (
 )
 
 export default connect(
-  state => ({
-    isLightMode: state.app.isLightMode,
-  }),
+  state => ({}),
   null
 )(IndexPage)

@@ -13,7 +13,7 @@ import Footer from "./footer"
 import MainNav from "./main-nav"
 import FrontPageHeader from './front-page-header'
 
-const FrontPageLayout = ({ lightMode, toggleLightMode, children }) => {
+const FrontPageLayout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query AuthorNavLinksQuery {
       site {
@@ -29,11 +29,9 @@ const FrontPageLayout = ({ lightMode, toggleLightMode, children }) => {
   `)
 
   return (
-    <div className={`container${lightMode ? " light-theme" : ""}`}>
+    <div className={'container'}>
       <MainNav
         navLinks={data.site.siteMetadata?.navLinks || []}
-        toggleLightMode={toggleLightMode}
-        lightMode={lightMode}
       />
       <FrontPageHeader />
       <div className="content-box">
