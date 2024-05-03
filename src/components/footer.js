@@ -21,8 +21,8 @@ const footerLinks = [
 ]
 
 const Footer = () => (
-  <footer className="footer">
-    <div className="content-box footer__container">
+  <footer className="h-32 bg-slate-900 dark:bg-white text-white dark:text-slate-900" id="footer">
+    <div className="flex flex-row justify-around mx-8 my-4">
       {footerLinks.map((link, key) => (
         <FooterLink
           title={link.title}

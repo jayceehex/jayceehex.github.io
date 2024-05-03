@@ -5,7 +5,7 @@ const FooterLink = ({ title, href, icon }) => (
     href={href}
     title={title}
     target="_blank"
-    className="footer__icon"
+    className=""
     rel="noreferrer"
   >
     {icon}

@@ -1,7 +1,7 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import { Link } from "gatsby"
 
-const MainNav = ({ navLinks }) => {
+const MainNav = ({ navLinks }): ReactNode => {
   return (
     <nav className="main-nav">
       <div className="content-box">
