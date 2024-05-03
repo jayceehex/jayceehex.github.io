@@ -1,5 +1,5 @@
 import React from "react"
 
-export const TextHighlight = ({children}) => {
-    return <span className="">{children}</span>
+export const TextHighlight = ({ children }) => {
+  return <span className="">{children}</span>
 }

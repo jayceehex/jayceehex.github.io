@@ -39,17 +39,24 @@ const Layout = ({ location, children }) => {
       : navLinks.find(navLink => navLink.link == path)?.name || ``
 
   return (
-    <div id="top-container" className="flex flex-col justify-between h-screen bg-white dark:bg-slate-900 dark:text-white">
-      {location.pathname === "/" ? 
-        <FrontPageHeader /> : 
+    <div
+      id="top-container"
+      className="flex flex-col justify-between h-screen bg-white dark:bg-slate-900 dark:text-white"
+    >
+      {location.pathname === "/" ? (
+        <FrontPageHeader />
+      ) : (
         <Header
           siteTitle={siteTitle(
             location.pathname,
             data.site.siteMetadata?.author || ``,
             data.site.siteMetadata?.navLinks || [],
           )}
-        />}
-      <main id="page-content" className="mx-8">{children}</main>
+        />
+      )}
+      <main id="page-content" className="mx-8">
+        {children}
+      </main>
       <Footer />
     </div>
   )
