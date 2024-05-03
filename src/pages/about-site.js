@@ -7,9 +7,7 @@ const AboutSitePage = ({ location }) => (
     <Helmet>
       <title>About this site | jayceehex.github.io</title>
     </Helmet>
-    <Layout
-      location={location}
-    >
+    <Layout location={location}>
       <p>
         This site is built using{" "}
         <a

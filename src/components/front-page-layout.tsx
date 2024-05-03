@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Footer from "./footer"
 import MainNav from "./main-nav"
-import FrontPageHeader from './front-page-header'
+import FrontPageHeader from "./front-page-header"
 
 const FrontPageLayout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,10 +28,8 @@ const FrontPageLayout = ({ children }) => {
   `)
 
   return (
-    <div className={'container'}>
-      <MainNav
-        navLinks={data.site.siteMetadata?.navLinks || []}
-      />
+    <div className={"container"}>
+      <MainNav navLinks={data.site.siteMetadata?.navLinks || []} />
       <FrontPageHeader />
       <div className="content-box">
         <main id="main">{children}</main>

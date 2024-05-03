@@ -31,22 +31,20 @@ const Layout = ({ location, children }) => {
   const siteTitle = (
     path: string,
     author: string,
-    navLinks: Array<any>
+    navLinks: Array<any>,
   ): string =>
     path === "/"
       ? author
       : navLinks.find(navLink => navLink.link == path)?.name || ``
 
   return (
-    <div className={'container'}>
-      <MainNav
-        navLinks={data.site.siteMetadata?.navLinks || []}
-      />
+    <div className={"container"}>
+      <MainNav navLinks={data.site.siteMetadata?.navLinks || []} />
       <Header
         siteTitle={siteTitle(
           location.pathname,
           data.site.siteMetadata?.author || ``,
-          data.site.siteMetadata?.navLinks || []
+          data.site.siteMetadata?.navLinks || [],
         )}
       />
       <div className="content-box">

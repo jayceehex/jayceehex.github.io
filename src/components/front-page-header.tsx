@@ -1,9 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-const FrontPageHeader = () => (
-  <header className="front-page-header"></header>
-)
+const FrontPageHeader = () => <header className="front-page-header"></header>
 
 FrontPageHeader.propTypes = {
   siteTitle: PropTypes.string,

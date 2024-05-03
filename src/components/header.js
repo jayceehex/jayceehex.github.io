@@ -4,9 +4,7 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <div className="content-box">
     <header className="header">
-        <h1 className="header__text">
-          {siteTitle}
-        </h1>
+      <h1 className="header__text">{siteTitle}</h1>
     </header>
   </div>
 )
