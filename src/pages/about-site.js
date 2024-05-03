@@ -1,6 +1,5 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import "../styles/styles.css"
 import Layout from "../components/layout"
 
 const AboutSitePage = ({ location }) => (

@@ -1,5 +1,4 @@
 import React from "react"
-import "./footer-link.scss"
 
 const FooterLink = ({ title, href, icon }) => (
   <a
