@@ -4,28 +4,35 @@
   "version": "1.0.0",
   "author": "Jen Hoskins",
   "main": "index.html",
+  "engines": {
+    "node": "18.20.2",
+    "npm": "10.5.0"
+  },
   "dependencies": {
-    "gatsby": "^2.24.85",
-    "gatsby-image": "^2.4.20",
-    "gatsby-plugin-manifest": "^2.4.33",
-    "gatsby-plugin-offline": "^3.2.30",
-    "gatsby-plugin-react-helmet": "^3.3.12",
-    "gatsby-plugin-sass": "^2.3.21",
-    "gatsby-plugin-sharp": "^2.6.38",
-    "gatsby-source-filesystem": "^2.3.32",
-    "gatsby-transformer-sharp": "^2.5.16",
-    "node-sass": "^4.14.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "gatsby": "^5.0.0",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-offline": "^6.13.2",
+    "gatsby-plugin-react-helmet": "^6.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
-    "react-icons": "^3.11.0",
-    "react-redux": "^7.2.1",
-    "redux": "^4.0.5"
+    "react-icons": "^5.2.0",
+    "sharp": "^0.33.3"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0",
-    "prettier": "2.1.2"
+    "autoprefixer": "^10.4.19",
+    "gatsby-plugin-postcss": "^6.13.1",
+    "gh-pages": "^6.1.1",
+    "globals": "^15.1.0",
+    "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
   },
   "keywords": [
     "gatsby"
@@ -35,6 +42,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "npx eslint",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
